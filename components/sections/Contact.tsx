@@ -41,7 +41,7 @@ export default function Contact() {
             
             <a 
               href="/resume.pdf" 
-              target="_blank"
+              download="Suhail_Ahamed_Resume.pdf"
               className="inline-flex items-center justify-center gap-2 bg-white text-brand-black border-2 border-brand-black/10 px-8 py-4 rounded-full font-medium hover:border-brand-accent hover:bg-brand-accent transition-colors group w-full sm:w-auto"
             >
               <FileText className="w-5 h-5 group-hover:-translate-y-1 transition-transform" />

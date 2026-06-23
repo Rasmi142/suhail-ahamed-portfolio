@@ -38,7 +38,10 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="bg-brand-gray text-brand-black py-24 px-6 md:px-16 lg:px-24 relative">
+    <section className="relative z-10">
+      {/* Background layer to fill the gap behind the bottom rounded corners */}
+      <div className="absolute bottom-0 left-0 w-full h-1/2 bg-brand-blue -z-10" />
+      <div className="bg-brand-gray text-brand-black py-24 px-6 md:px-16 lg:px-24 relative rounded-[4rem] md:rounded-[6rem]">
       {/* Decorative lines */}
       <div className="absolute top-0 right-0 w-1/3 h-full overflow-hidden pointer-events-none opacity-5">
         <svg viewBox="0 0 100 100" preserveAspectRatio="none" className="w-full h-full">
@@ -49,7 +52,7 @@ export default function Services() {
       </div>
 
       <div className="max-w-7xl mx-auto">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -89,6 +92,7 @@ export default function Services() {
         <div className="mt-24 pt-8 border-t border-brand-black/10 flex justify-end">
           <p className="text-sm uppercase tracking-widest text-brand-black/40">Portfolio</p>
         </div>
+      </div>
       </div>
     </section>
   );

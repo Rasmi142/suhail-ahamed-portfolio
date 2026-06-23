@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col md:flex-row overflow-hidden bg-brand-black">
+    <section className="relative min-h-screen flex flex-col md:flex-row overflow-hidden bg-brand-black rounded-b-[4rem] md:rounded-b-[6rem]">
       {/* Left Content (Blue) */}
       <div className="w-full md:w-1/2 bg-brand-blue flex flex-col justify-center p-8 pb-32 md:p-16 md:pb-32 lg:p-24 lg:pb-40 relative z-10 min-h-[60vh] md:min-h-screen text-white">
         {/* Background Pattern Elements */}
@@ -34,11 +34,11 @@ export default function Hero() {
           <h2 className="text-sm md:text-base font-semibold tracking-wider text-brand-accent-blue mb-4 uppercase">
             Transforming Operations Into Scalable Growth
           </h2>
-          
+
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight">
             SUHAIL <br /> AHAMED
           </h1>
-          
+
           <p className="text-lg md:text-xl text-brand-gray mb-8 max-w-lg leading-relaxed">
             Chief Operating Officer | Business Operations Leader | Project Delivery Specialist
           </p>
@@ -48,11 +48,11 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-wrap items-center gap-4 mb-12">
-            <a href="/resume.pdf" target="_blank" className="inline-flex items-center gap-2 bg-brand-accent text-brand-black px-6 py-3 rounded-full font-semibold hover:bg-white transition-colors group">
+            <a href="/resume.pdf" download="Suhail_Ahamed_Resume.pdf" className="inline-flex items-center gap-2 bg-brand-accent text-brand-black px-6 py-3 rounded-full font-semibold hover:bg-white transition-colors group">
               <Download className="w-5 h-5 group-hover:-translate-y-1 transition-transform" />
               Download Resume
             </a>
-            
+
             <a href="https://www.linkedin.com/in/suhail-ahamed" target="_blank" className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-brand-accent hover:border-brand-accent hover:text-brand-black transition-all">
               <Globe className="w-5 h-5" />
             </a>
@@ -75,7 +75,7 @@ export default function Hero() {
             </div>
           </div>
         </motion.div>
-        
+
         {/* Bottom Logo Shape Placeholder */}
         <div className="absolute bottom-8 left-8 md:bottom-12 md:left-12 flex items-end z-0">
           <div className="w-16 h-16 rounded-full bg-brand-accent"></div>
@@ -85,12 +85,12 @@ export default function Hero() {
       </div>
 
       {/* Right Image */}
-      <div className="w-full md:w-1/2 h-[40vh] md:h-screen relative">
-        <Image 
-          src="/image.png"
+      <div className="w-full md:w-1/2 h-[60vh] md:h-auto relative">
+        <Image
+          src="/suhail.jpeg"
           alt="Suhail Ahamed"
           fill
-          className="object-cover"
+          className="object-cover object-top"
           priority
         />
         {/* Subtle overlay */}

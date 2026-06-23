@@ -21,7 +21,12 @@ const expertise = [
 
 export default function Experience() {
   return (
-    <section className="bg-brand-black text-white py-24 px-6 md:px-16 lg:px-24 relative overflow-hidden">
+    <section className="relative z-10">
+      {/* Background layers to fill the gaps for rounded corners */}
+      <div className="absolute top-0 left-0 w-full h-1/2 bg-brand-blue -z-10" />
+      <div className="absolute bottom-0 left-0 w-full h-1/2 bg-brand-gray -z-10" />
+      
+      <div className="bg-brand-black text-white py-24 px-6 md:px-16 lg:px-24 relative overflow-hidden rounded-[4rem] md:rounded-[6rem]">
       
       {/* Decorative Topographic Lines */}
       <div className="absolute top-0 right-0 w-full md:w-1/2 h-full opacity-10 pointer-events-none">
@@ -80,6 +85,7 @@ export default function Experience() {
       <div className="max-w-7xl mx-auto mt-24 pt-12 border-t border-white/10 text-right">
         <h2 className="text-4xl md:text-6xl font-bold tracking-tight mb-2">Experience</h2>
         <p className="text-sm uppercase tracking-widest text-brand-gray/50">Portfolio</p>
+      </div>
       </div>
     </section>
   );
